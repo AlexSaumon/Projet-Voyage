@@ -4,13 +4,7 @@
 }
 
 
-.HeaderLogo {
-    display: flex;
-    width: 91.09px;
-    height: auto;
-    padding-bottom: 30px;
 
-}
     
 
 :root {
@@ -43,15 +37,20 @@ a {
 .Header {
     background-color: #ffffff; /* Pour changer la couleur pour faire des test*/
     padding-bottom:30px;
-    align-content: space-around;
-    width: 1440px;
-    height: 79px;
+    justify-content: space-between;
+}
+
+.HeaderLogo {
+    display: flex;
+    width: 91.09px;
+    height: auto;
+
 }
 
 .button{
     /*background-color: #ffffff; /* Pour changer la couleur pour faire des test*/
     display: grid;
-    justify-content: right;
+    justify-content: end;
     align-content: space-around;
     grid-template-columns: auto auto;
     gap: 50px;
