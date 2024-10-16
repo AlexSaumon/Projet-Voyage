@@ -34,19 +34,23 @@ a {
 
 .Header {
      padding-bottom:30px;
+     display: flex;
+     flex-direction: row;
     justify-content: space-between;
 }
 
 .HeaderLogo {
-    display: flex;
     width: 91.09px;
     height: auto;
+    order: -1;
+    align-self: center;
 
 }
 
 .button{
     /*background-color: #ffffff; /* Pour changer la couleur pour faire des test*/
-    display: grid;
+    display: flex;
+    flex-direction: row;
     justify-content: end;
     align-content: space-around;
     grid-template-columns: auto auto;
@@ -73,11 +77,22 @@ a {
     padding-top: 13.5px;
 }
 
+.Accroche {
+    
+    h1 {
+        margin-bottom: 0px;
+    }
+    p{
+        margin-top: 5px;
+    }
+}
+
 
 .Search {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    margin-top: 40px; 
     border-collapse: collapse;
-    display: grid;
+    display: flex;
     justify-content: left;
     align-content: space-around;
     grid-template-columns: auto auto auto;
@@ -258,6 +273,54 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .Header {
+       flex-direction: column-reverse;
+       justify-content: space-evenly;
+       grid-template-columns: auto auto auto;
+       background-color: aquamarine;
+    }
+
+   .HeaderLogo {
+    width: 91.09px;
+    height: auto;
+    order: 0;
+    align-self: center;
+   }
+
+   
+
+   .button{
+       /*background-color: #ffffff; /* Pour changer la couleur pour faire des test*/
+       justify-content: inherit;
+   }
+   
+   .ButtonActive {
+       color: #0065FC;
+       border-bottom: 3px solid #0065FC;
+       padding-top: 13.5px;
+       border-top: none;
+       background-color: aqua;
+       padding-bottom: 13.5px;
+       
+   }
+   
+   
+   .ButtonInactive:hover {
+       color:#0065FC;
+       border-bottom: 3px solid #0065FC;
+       border-top: none;
+   }
+   
+   
+   .ButtonInactive {
+       color: #000000;
+       border-bottom: 3px solid #F2F2F2; /* Pour changer la couleur pour faire des test*/
+       border-top: none;
+       padding-top: 13.5px;
+       padding-bottom: 13.5px;
+       
+   }
 }
 
 /* Small devices (phones, less than 768px) */
