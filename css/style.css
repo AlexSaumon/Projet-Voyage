@@ -74,7 +74,6 @@ a {
 }
 
 
-
 .Search {
     margin-bottom: 40px;
     border-collapse: collapse;
@@ -90,13 +89,19 @@ a {
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         padding: 10px;
-        border: 1px solid #F2F2F2;
+        border: 3px solid #F2F2F2;
     }
+
+    .fa-solid:hover {
+        background-color:#DEEBFF;
+        border-color: #DEEBFF;    
+    }
+
     #Recherche {
         background-color: #ffffff;
         box-sizing: border-box;
         padding: 10px;
-        border: 1px solid #F2F2F2;
+        border: 3px solid #F2F2F2;
     }
     
     #envoyer {
@@ -106,7 +111,13 @@ a {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         padding: 10px;
-        border: 1px solid #0065FC;
+        border:3px solid #0065FC;
+    }
+
+    #envoyer:hover {
+        color: #000000;
+        background-color:#DEEBFF;
+        border-color: #DEEBFF;
     }
     
 }
