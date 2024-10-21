@@ -3,6 +3,23 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/** {
+    all: unset;
+    display: revert;
+  }*/
+  *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* root font-size to rem - correspond to 10px but not in px to authorize user to change default font size of his browser - 1rem = 10px; 10px/16px = 62.5% - 16px default size browser font*/
+}
+
     
 
 :root {
@@ -54,6 +71,7 @@ a {
     justify-content: end;
     align-content: space-around;
     grid-template-columns: auto auto;
+    list-style: none;
     gap: 50px;
 }
 
@@ -88,7 +106,7 @@ a {
 }
 
 
-.Search {
+.search {
     margin-bottom: 50px;
     margin-top: 40px; 
     border-collapse: collapse;
@@ -96,6 +114,13 @@ a {
     justify-content: left;
     align-content: space-around;
     grid-template-columns: auto auto auto;
+
+    .box-icon {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
 
     .fa-solid { 
         color: black;
@@ -274,56 +299,72 @@ a {
         font-size: 13px;
     }
 
-    .Header {
-       flex-direction: column-reverse;
-       justify-content: space-evenly;
-       grid-template-columns: auto auto auto;
-       background-color: aquamarine;
-    }
 
-   .HeaderLogo {
-    width: 91.09px;
-    height: auto;
-    order: 0;
-    align-self: center;
-   }
-
-   
-
-   .button{
-       /*background-color: #ffffff; /* Pour changer la couleur pour faire des test*/
-       justify-content: inherit;
-   }
-   
-   .ButtonActive {
-       color: #0065FC;
-       border-bottom: 3px solid #0065FC;
-       padding-top: 13.5px;
-       border-top: none;
-       background-color: aqua;
-       padding-bottom: 13.5px;
-       
-   }
-   
-   
-   .ButtonInactive:hover {
-       color:#0065FC;
-       border-bottom: 3px solid #0065FC;
-       border-top: none;
-   }
-   
-   
-   .ButtonInactive {
-       color: #000000;
-       border-bottom: 3px solid #F2F2F2; /* Pour changer la couleur pour faire des test*/
-       border-top: none;
-       padding-top: 13.5px;
-       padding-bottom: 13.5px;
-       
-   }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .main-container {
+        width: 100%;
+        max-width: 1440px;
+        padding: 0 0px;
+        box-sizing: border-box;
+    }
+    .Header {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto;
+        /*background-color: aquamarine;*/
+     }
+ 
+    .HeaderLogo {
+     width: 91.09px;
+     height: auto;
+     order: 0;
+     align-self: center;
+    }
+ 
+    
+ 
+    .button{
+        /*background-color: #ffffff; /* Pour changer la couleur pour faire des test*/
+        display: flex;
+        justify-content: space-evenly;
+        gap: 0px;
+        
+    }
+    
+    .ButtonActive {
+        color: #0065FC;
+        display: flex;
+        border-bottom: 3px solid #0065FC;
+        padding-top: 13.5px;
+        border-top: none;
+        /*background-color: aqua;*/
+        padding-bottom: 13.5px;
+        justify-content: center;
+        width: 50%;
+        
+    }
+    
+    
+    .ButtonInactive:hover {
+        color:#0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+    
+    
+    .ButtonInactive {
+        color: #000000;
+        display: flex;
+        border-bottom: 3px solid #F2F2F2; 
+        border-top: none;
+        padding-top: 13.5px;
+        padding-bottom: 13.5px;
+        justify-content: center;
+        width: 50%;
+        
+    }
 }

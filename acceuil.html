@@ -18,22 +18,28 @@
     <div class="main-container">
         <header>
             <div class="Header">
-                <p>
-                    <div class="button">
-                        <a class="ButtonActive">Hébergements</a> <a  class="ButtonInactive" href="Activite.html"> Activités</a>
-                    </div>
-                    <img class="HeaderLogo" src="./images/logo/Booki.png" alt="Booki logo" id="logo" />
-                </p>
+                
+                <nav> <!-- nav> Puis mette un UL, puis 2 Li avec les A; puis centré les A dans les LO, mettre la bordure et configuré pourr que les LI fasse 50% du UL-->
+                    <ul class="button">
+                        <li class="ButtonActive"><a>Hébergements</a> </li>
+                        <li class="ButtonInactive"><a href="Activite.html"> Activités</a></li>
+                    </ul>
+                </nav>
+                <img class="HeaderLogo" src="./images/logo/Booki.png" alt="Booki logo" id="logo" />
+                
+            </div>
+            <div class="Accroche">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
             </div>
         </header>
         <main>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
+           
             
-            <div class="Search">
+            <div class="search">
                 
-                <i class="fa-solid fa-location-dot"></i>
-                <input id="Recherche" rows="6" name= "recherche" value="exemple" required>
+                <div class="box-icon"><i class="fa-solid fa-location-dot fa-2x"></i></div>
+                <input id="Recherche" rows="6" name= "recherche" value="Marseille, France" required>
                 <input id= "envoyer" type="submit" value="Rechercher">
                 
             </div>
