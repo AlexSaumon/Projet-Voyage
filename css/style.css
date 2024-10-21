@@ -78,16 +78,16 @@ a {
 }
 
 .ButtonActive {
-    color: #0065FC;
-    border-top: 3px solid #0065FC;
+    color: var(--main-color);
+    border-top: 3px solid var(--main-color);
     padding-top: 13.5px;
 
 }
 
 
 .ButtonInactive:hover {
-    color:#0065FC;
-    border-top: 3px solid #0065FC;
+    color:var(--main-color);
+    border-top: 3px solid var(--main-color);
 }
 
 
@@ -116,16 +116,20 @@ a {
 .search {
     border-collapse: collapse;
     display: inline-flex;
-    background-color: #F2F2F2;
-    border-radius: 20px;
+    background-color: var(--main-bg-color);
+    border-radius: 10px;
 
     .box-icon {
         display: flex;
     justify-content: center;
     align-items: center;
 
-    }
 
+    }
+    
+    .box-icon2 {
+        display: none;
+    }
     .fa-solid { 
         color: black;
         padding: 10px;
@@ -145,12 +149,12 @@ a {
     
     #envoyer {
         color: #ffffff;
-        background-color: #0065FC;
+        background-color: var(--main-color);
         box-sizing: border-box;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         padding: 10px;
-        border:3px solid #0065FC;
+        border:3px solid var(--main-color);
     }
 
     #envoyer:hover {
@@ -390,9 +394,9 @@ a {
     }
     
     .ButtonActive {
-        color: #0065FC;
+        color: var(--main-color);
         display: flex;
-        border-bottom: 3px solid #0065FC;
+        border-bottom: 3px solid var(--main-color);
         padding-top: 13.5px;
         border-top: none;
         /*background-color: aqua;*/
@@ -404,8 +408,8 @@ a {
     
     
     .ButtonInactive:hover {
-        color:#0065FC;
-        border-bottom: 3px solid #0065FC;
+        color:var(--main-color);
+        border-bottom: 3px solid var(--main-color);
         border-top: none;
     }
     
@@ -413,7 +417,7 @@ a {
     .ButtonInactive {
         color: #000000;
         display: flex;
-        border-bottom: 3px solid #F2F2F2; 
+        border-bottom: 3px solid var(--main-bg-color); 
         border-top: none;
         padding-top: 13.5px;
         padding-bottom: 13.5px;
@@ -435,24 +439,36 @@ a {
     .search {
         justify-content: center;
         
+        .box-icon {
+            display: none;
+        }
+
+        .box-icon2 {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+        }
+
 
         #envoyer {
             display: none;
         }
         .loup-icon {
             display: flex;
+            border: none;
+            background: none;
             
             .fa-solid {
             color: #ffffff;
             display: flex;
-            background-color: #0065FC;
+            background-color: var(--main-color);
             box-sizing: border-box;
             border-radius: 10px;
-            
             padding: 10px;
-            border:3px solid #0065FC;
+            border:3px solid var(--main-color);
             align-items: center;
+            box-shadow: 0px 5px 20px 0px #c0c0c0;
             }
         }
-    }
-}
+    } 
+} 
