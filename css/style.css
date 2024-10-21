@@ -17,10 +17,12 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /* root font-size to rem - correspond to 10px but not in px to authorize user to change default font size of his browser - 1rem = 10px; 10px/16px = 62.5% - 16px default size browser font*/
+    font-size: 100%; /* root font-size to rem - correspond to 10px but not in px to authorize user to change default font size of his browser - 1rem = 10px; 10px/16px = 62.5% - 16px default size browser font*/
 }
 
-    
+h1 {
+    font-size: 137.5%;
+}
 
 :root {
     --main-color: #0065FC;
@@ -158,6 +160,9 @@ a {
         color: #000000;
         background-color:#DEEBFF;
         border-color: #DEEBFF;
+    }
+    .loup-icon {
+        display: none;
     }
     
 }
@@ -366,5 +371,29 @@ a {
         justify-content: center;
         width: 50%;
         
+    }
+    
+    .Accroche {
+        padding: 5%;
+    }
+
+    .search {
+        justify-content: center;
+        
+        #envoyer {
+            display: none;
+        }
+        .loup-icon {
+            display: flex;
+            .fa-solid {
+                color: #ffffff;
+            background-color: #0065FC;
+            box-sizing: border-box;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 10px;
+            border:3px solid #0065FC;
+            }
+        }
     }
 }
