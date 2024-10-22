@@ -17,7 +17,7 @@
 
 html {
     box-sizing: border-box;
-    font-size: 100%; /* root font-size to rem - correspond to 10px but not in px to authorize user to change default font size of his browser - 1rem = 10px; 10px/16px = 62.5% - 16px default size browser font*/
+    font-size: 16px; /* root font-size to rem - correspond to 10px but not in px to authorize user to change default font size of his browser - 1rem = 10px; 10px/16px = 62.5% - 16px default size browser font*/
 }
 
 h1 {
@@ -185,7 +185,7 @@ a {
 
 .vignettes-container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .filtres-vignettes {
@@ -272,6 +272,33 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+    flex-direction: column;
+    width: fit-content;
+    box-sizing: border-box;
+}
+
+.hebergements-cards img{
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 }
 
 /****** Populaires ***********/
@@ -384,6 +411,10 @@ a {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .vignettes-container {
+        padding-top: 10px;
     }
 
     .hebergements-and-populaires {
@@ -540,7 +571,6 @@ a {
         display: grid;
         justify-content: space-evenly;
         grid-template-columns: auto auto;
-        padding-top: 10px;
     }
 
     .filtres-vignettes {
