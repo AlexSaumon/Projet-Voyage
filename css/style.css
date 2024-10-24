@@ -388,6 +388,25 @@ a {
     border-top-right-radius: 20px;
 }
 
+.mentions-container {
+    display: flex;
+    background-color: var(--main-bg-color);
+    flex-direction: row;
+    justify-content: space-around;
+    /*padding-bottom: 500px;*/
+    /*border: 5px solid #000000;  couleur pour faire des test*/
+  }
+
+  .mentions-container .mentions {
+    /*background-color: #ffffff;  couleur pour faire des test*/
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 34%;
+    padding: 30px;
+  }
+
 /* zone d'apprentissage pour la search bar*/
 .topnav {
     overflow: hidden;
@@ -696,6 +715,14 @@ a {
 
     .activités-card img {
         height: 150px;
+    }
+
+    .mentions-container {
+        flex-direction: column;
+    }
+
+    .mentions-container .mentions {
+        width: 100%;
     }
 
 } 
