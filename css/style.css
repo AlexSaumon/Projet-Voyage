@@ -493,9 +493,13 @@ a {
         width: 100%;
     }
 
-   /* .hebergements a {
+   .hebergements a {
         width: 30%;
-    }*/
+    }
+
+    .hebergements-cards .card {
+        width: 100%;
+    }
     
 
     .hebergements-cards {
