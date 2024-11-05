@@ -20,8 +20,8 @@
             <div class="Header">
                 <nav> 
                     <ul class="button">
-                        <li class="ButtonActive"><a>Hébergements</a> </li>
-                        <li class="ButtonInactive"><a href="Activite.html"> Activités</a></li>
+                        <li class="ButtonActive"><a href="#hebergements">Hébergements</a> </li>
+                        <li class="ButtonInactive"><a href="#activités"> Activités</a></li>
                     </ul>
                 </nav>
                 <img class="HeaderLogo" src="./images/logo/Booki.png" alt="Booki logo" id="logo">   
@@ -34,37 +34,36 @@
                 <div class="search-container">
                     <div class="search">
                         <div class="box-icon"><i class="fa-solid fa-location-dot fa-2x"></i></div>
-                        <div class="box-icon2"><i class="fa-solid fa-location-dot"></i></div>
                         <input id="Recherche" name= "recherche" placeholder="Marseille, France" style="font-weight: bold; color: black;" required>
                         <input id= "envoyer" type="submit" value="Rechercher">
                         <button type="submit" class="loup-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </div>
                 <div class="filtres">
-                    <div class="filtres-titre"><h1>Filtres</h1></div>
+                    <div class="filtres-titre"><span>Filtres</span></div>
                     <div class="vignettes-container">
                         <a href="#">
                             <article class="filtres-vignettes">
                                 <i class="fa-solid fa-money-bill-wave"></i>
-                                <h3>Économique</h3>
+                                <p>Économique</p>
                             </article>
                         </a>
                         <a href="#">
                             <article class="filtres-vignettes">
                                 <i class="fa-solid fa-person"></i>
-                                <h3>Familial</h3>
+                                <p>Familial</p>
                             </article>
                         </a>
                         <a href="#">
                             <article class="filtres-vignettes">
                                 <i class="fa-solid fa-heart"></i>
-                                <h3>Romantique</h3>
+                                <p>Romantique</p>
                             </article>
                         </a>
                         <a href="#">
                             <article class="filtres-vignettes">
                                 <i class="fa-solid fa-fire"></i>
-                                <h3>Nos pépites</h3>
+                                <p>Nos pépites</p>
                             </article>
                         </a>
                     </div>
@@ -80,7 +79,7 @@
         <main>
 
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -202,7 +201,7 @@
                     </div>
                     <div class="hebergements-footer">
                         <a href="#">
-                            <h2 class="section-title">Afficher plus</h2>
+                            <h3 class="section-title">Afficher plus</h3>
                         </a>
                     </div>
                 </section>
@@ -272,8 +271,8 @@
                     </div>
                 </section>
             </div>
-            <div class="activités">
-                <h1>Activités à Marseille</h1>
+            <section class="activités" id="activités">
+                <h2>Activités à Marseille</h2>
                 <div class="activités-card">
                     <a href="#">
                         <article class="card">
@@ -316,7 +315,7 @@
                         </article>
                     </a>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
             <div class="mentions-container">
